@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bygbool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fredoka:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Bygbool</h1>
+
+    <form  autocomplete="off">
+        <input type="text" value="" placeholder="Search Here" id="input"><br class="br"><br class="br" required> 
+    <a onclick="getValue()" id="myAnchor">Search</a>
+    </form>
+
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Fredoka', sans-serif;
+    }
+    body{
+        background-color: #000;
+        text-align: center;
+    }
+    h1{
+        color: #fff;
+        font-size: 60px;
+        margin-top: 160px;
+    }
+    input{
+        margin-top: 40px;
+        width: 500px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 0 30px;
+        outline: none;
+        border: none;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        border: solid 1px;
+        border-radius: 40px;
+        cursor: pointer;
+        padding: 5px 14px;
+        transition: .2s ease;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+
+    @media (max-width: 592px) {
+        h1{
+            font-size: 80px;
+        }
+        input{
+            width: 85%;
+            height: 50px;
+        }
+        a{
+            font-size: 30px;
+        }
+    }
+</style>
+<script type="text/javascript">
+    
+   
+        function getValue() {
+                var x = document.getElementById('input').value;
+                document.getElementById("myAnchor").href = "https://www.google.com/search?q=" + x;
+            }
+ 
+ 
+</script>
+
+</html>
